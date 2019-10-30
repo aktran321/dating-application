@@ -6,11 +6,10 @@
   <meta charset="UTF-8">
   <title>FriendFinder</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
@@ -22,9 +21,9 @@
 
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
 
-    <h2>Survey Questions</h2>
+    <h1>Survey Questions</h1>
     <a href="/"><button class="btn btn-lg btn-primary">Home</button></a>
     <hr>
 
@@ -32,13 +31,13 @@
     <h4>Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
 
-    <h4>Link to Photo Image (Required)</h4>
+    <h4>Link to Photo (Required)</h4>
     <input type="text" id="photo" class="form-control" required>
 
     <hr>
 
-    <h3><strong>Question 1</strong></h3>
-    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+    
+    <h4>1) You like pineapples on pizza.</h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -48,8 +47,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 2</strong></h3>
-    <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+    <h4>2) You consider yourself more outgoing and actively try to put yourself in uncomfortable situations.</h4>
     <select class="chosen-select" id="q2">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -60,8 +58,8 @@
     </select>
 
 
-    <h3><strong>Question 3</strong></h3>
-    <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+
+    <h4>3) You are not very stressed, even with a deadline coming up.</h4>
     <select class="chosen-select" id="q3">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -72,8 +70,7 @@
     </select>
 
 
-    <h3><strong>Question 4</strong></h3>
-    <h4>You rarely do something just out of sheer curiosity.</h4>
+    <h4>4) You frequently volunteer your free time for the community you are in.</h4>
     <select class="chosen-select" id="q4">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -84,8 +81,8 @@
     </select>
 
 
-    <h3><strong>Question 5</strong></h3>
-    <h4>People can rarely upset you.</h4>
+
+    <h4>5) People can rarely upset you.</h4>
     <select class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -96,8 +93,8 @@
     </select>
 
 
-    <h3><strong>Question 6</strong></h3>
-    <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+
+    <h4>6) It is often difficult for you to relate to other people’s feelings.</h4>
     <select class="chosen-select" id="q6">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -108,8 +105,8 @@
     </select>
 
 
-    <h3><strong>Question 7</strong></h3>
-    <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+
+    <h4>7) You are honest, even when it comes at the cost of another person's emotions.</h4>
     <select class="chosen-select" id="q7">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -119,8 +116,8 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 8</strong></h3>
-    <h4>You rarely get carried away by fantasies and ideas.</h4>
+
+    <h4>8) You rarely get carried away by fantasies and ideas.</h4>
     <select class="chosen-select" id="q8">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -130,8 +127,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 9</strong></h3>
-    <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+    <h4>9) You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
     <select class="chosen-select" id="q9">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -141,8 +137,8 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 10</strong></h3>
-    <h4>You feel more energetic after spending time with a group of people.</h4>
+
+    <h4>10) You enjoy outtings with large groups of people, rather than smaller groups.</h4>
     <select class="chosen-select" id="q10">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -156,13 +152,13 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    <button type="submit" class="btn btn-danger btn-lg" id="submit">
      Submit</button>
 
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+        <p><a href="/api/friends">API Friends List</a>
       </div>
     </footer>
 
@@ -201,10 +197,10 @@
         disable_search_threshold: 10
       },
       ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
+        no_results_text: "nothing found"
       },
       ".chosen-select-width": {
-        width: "95%"
+        width: "80%"
       }
     };
 
@@ -217,26 +213,26 @@
       event.preventDefault();
 
       // Form validation
-      function validateForm() {
-        var isValid = true;
+      function validation() {
+        var valid = true;
         $(".form-control").each(function() {
           if ($(this).val() === "") {
-            isValid = false;
+            valid = false;
           }
         });
 
         $(".chosen-select").each(function() {
 
           if ($(this).val() === "") {
-            isValid = false;
+            valid = false;
           }
         });
-        return isValid;
+        return valid;
       }
 
-      // If all required fields are filled
-      if (validateForm()) {
-        // Create an object for the user"s data
+    
+      if (validation()) {
+       
         var userData = {
           name: $("#name").val(),
           photo: $("#photo").val(),
@@ -253,20 +249,65 @@
             $("#q10").val()
           ]
         };
-
-        // AJAX post the data to the friends API.
+        
+        // Posts the new submitted data to the API
         $.post("/api/friends", userData, function(data) {
+//=================================================================================================================================================================
+//New Code
+var friends = require("./data/friends");
+          var diff = 0;
+          var scores = [];
+          //When the submit button is clicked, the data is pushed up to the form, but before we push the data up, we want to compare the userData first with all the data
+          //that is already in the array and run the following code.
+          //This for loop will fill the empty array "scores" with the total sum of differences between the user and the people currently in the database
+          for(var i = 0; i<friends.length;i++){
+            for(var x = 0; x<friends[i].scores.length;x++){
+                //WE can just push all the differences into an array and then grab the index with the lowest number
+                diff = diff + Math.abs(userData.score[x]-friends[i].score[x]);
+                scores.push(diff);
+            }
+          }
+          //the function below takes an array and finds the index of the lowest integer
+          var indexOfLow = function(arr){
+            if(arr.length === 0){
+                return -1;
+            }
+            var lowestValue = arr[0];
+            var lowIndex = 0;
+            for(var i = 0; i < arr.length; i++){
+                if(arr[i]>max){
+                  //index of the lowest number
+                    lowIndex = i;
+                  //value of the lowest number, which is positioned at lowIndex
+                    lowestValue = arr[i];
+                }
+            }
+          //calls the function with scores as the parameter.
+          //the index that is returned corresponds to the BEST MATCH
+          console.log("Index of the lowest number: "+ arr[lowIndex]);
+          console.log("And their name here: "+ friends[lowIndex].name);
+          return lowIndex;
+          
+          }
 
+          indexOfLow(scores);
+          
+
+          //now take the index of the BEST MATCH and display the BEST MATCHES information. The best matches information is located in the "friends" array and 
+          // will be inside of friends[maxIndex].name/photo
+
+//=================================================================================================================================================================
+          
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
+          $("#match-name").text(friends[lowIndex].name);
+          $("#match-img").attr("src", friends[lowIndex].photo);
 
           // Show the modal with the best match
           $("#results-modal").modal("toggle");
 
         });
       } else {
-        alert("Please fill out all fields before submitting!");
+        alert("Please answer all questions");
       }
     });
   </script>

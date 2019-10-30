@@ -1,7 +1,7 @@
 //Dependencies
 var express = require("express");
 var app = express();
-var PORT = 8500;
+var PORT = process.env.PORT || 8500;
 
 //Set up the express app to handle data parsing
 app.use(express.urlencoded({ extended: true}));

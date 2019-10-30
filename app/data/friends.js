@@ -1,8 +1,14 @@
 var friends = [
     {
-        name:"Joe",
+        name:"JOE",
         photo:"none",
-        scores:[1,2,3,4,5,6,7,8,9,10]
+        scores:[1,1,1,1,1,1,1,1,1,1]
+    },
+    {
+        name:"BOB",
+        photo:"none",
+        scores:[5,5,5,5,5,5,5,5,5,5]
     }
 ]
 module.exports = friends;
+

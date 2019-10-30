@@ -11,7 +11,7 @@ module.exports = function(app){
             //pushing new data to friends array
             friendsData.push(req.body);
             res.json(true);
-            console.log("This is req.body: " + req.body);
+           
         
     })
 }
